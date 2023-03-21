@@ -4,10 +4,14 @@ import {Alert, Button, StyleSheet, View, TextInput, Text} from 'react-native';
 export default class Login extends React.Component {
   state = { username: '', password: '', errorMessage: null }
   handleLogin = () => {
-    if (this.state.username == user && this.state.password == 123456)
-    Alert.alert('You are acessed!');
+    if (this.state.username == 'user' && this.state.password == 123456)
+      {
+        Alert.alert('You are acessed!');
+      }
     else 
-    Alert.alert('You are denied!');
+    {
+      Alert.alert('You are denied!');
+    }
   }
 
   render() {
